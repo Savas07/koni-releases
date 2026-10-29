@@ -1,0 +1,33 @@
+name: publish
+
+# koni (private) release iş akışı, imzalı kurulumu deploy key ile `incoming` dalına
+# (tek commit, her sürümde üzerine yazılır) iter; bu iş akışı onu GitHub Release yapar.
+# Uygulamanın güncelleme adresi: releases/latest/download/latest.json
+on:
+  push:
+    branches: [incoming]
+
+permissions:
+  contents: write
+
+concurrency: publish
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ver=$(jq -r .version latest.json)
+          tag="v$ver"
+          files=(KONI_* latest.json)
+          if gh release view "$tag" >/dev/null 2>&1; then
+            gh release upload "$tag" "${files[@]}" --clobber
+          else
+            gh release create "$tag" "${files[@]}" --target main --latest \
+              --title "KONİ $ver (Windows)" --notes-file notes.md
+          fi

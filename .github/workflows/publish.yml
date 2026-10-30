@@ -29,5 +29,5 @@ jobs:
             gh release upload "$tag" "${files[@]}" --clobber
           else
             gh release create "$tag" "${files[@]}" --target main --latest \
-              --title "KONİ $ver (Windows)" --notes-file notes.md
+              --title "KONİ $ver" --notes-file notes.md
           fi

@@ -1,13 +1,13 @@
-# KONİ: Windows ve macOS kurulumları
+# KONİ: kurulum dosyaları
 
-Arkadaşlarla senkron video izleme uygulaması KONİ'nin kurulum dosyaları. Kaynak kod burada değil.
+Arkadaşlarla senkron video izleme uygulaması KONİ'nin kurulumları ve otomatik güncelleme dosyası (`latest.json`). Kaynak kod: [serkanqltun-hub/koni](https://github.com/serkanqltun-hub/koni).
 
 **Windows:** [Releases → en son sürüm](https://github.com/Savas07/koni-releases/releases/latest) → `KONI_<sürüm>_x64-setup.exe`. Windows 10/11 x64, yönetici izni istemez. İmzasız: SmartScreen'de "Ek bilgi → Yine de çalıştır".
 
-**macOS:** aynı sayfadan `KONI_<sürüm>_aarch64.dmg`. Apple Silicon (M1 ve sonrası), macOS 14+. Apple Developer imzası yok (ad-hoc imzalı, notarize edilmedi): ilk açılışta macOS engellerse Sistem Ayarları → Gizlilik ve Güvenlik → "Yine de Aç". "Hasarlı" uyarısı çıkarsa Terminal'de `xattr -cr /Applications/KONI.app`.
+**macOS:** şu an yayınlanmıyor (yalnızca 0.0.32 ve 0.0.33'te deneme `.dmg`'si var).
 
-**Güncelleme:** kurulu KONİ açılışta yeni sürümü buradan kendisi indirip kurar (imzalı; yalnızca KONİ anahtarıyla imzalanmış paket kabul edilir). Taşınabilir zip kendini güncellemez.
+**Güncelleme:** kurulu KONİ açılışta yeni sürümü buradan kendisi indirip kurar (imzalı; yalnızca KONİ anahtarıyla imzalanmış paket kabul edilir). Bu adres kurulu her kopyanın içine gömülü olduğu için repo silinmemeli. Taşınabilir zip kendini güncellemez.
 
-**Lisans:** oynatıcı LGPL libmpv/FFmpeg; `NOTICE.md`, `LICENSES/` ve `source/` (mpv + FFmpeg kaynakları) kurulumun içinde (macOS: `KONI.app/Contents/Resources/libmpv`).
+**Lisans:** oynatıcı LGPL libmpv/FFmpeg; `NOTICE.md`, `LICENSES/` ve `source/` (mpv + FFmpeg kaynakları) kurulumun içinde.
 
 Bu repo otomatik doldurulur: `incoming` dalı ve `.github/workflows/publish.yml`.

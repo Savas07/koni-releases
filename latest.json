@@ -1,0 +1,15 @@
+{
+  "version": "1.1.4",
+  "notes": "# KONİ 1.1.4\r\n\r\n**Windows 10/11 x64** ve **macOS 11+ (Apple Silicon: M1 ve sonrası)**. Kurulu KONİ kendiliğinden güncellenir.\r\n\r\n**İndir**: https://github.com/Savas07/koni-releases/releases/latest\r\n\r\nTV'ye göndermeyi onaran bir düzeltme ve odada küçük iyileştirmeler.\r\n\r\n**Düzeltme**\r\n- 1.1.3'te TV'ye göndermek (DLNA) altyazı indirilirken çöküyordu; artık çalışıyor.\r\n- \"Ne izlesek\" geri sayımındaki halkada görünen kare parlama giderildi.\r\n\r\n**Yenilik**\r\n- Odada Mola süreleri kontrol çubuğundaki Mola düğmesinden seçilebiliyor.\r\n- Odada sıradaki bölüme otomatik geçiş artık yalnızca oda sahibinde çalışıyor; herkesin aynı anda tetiklemesi engellendi.\r\n\r\n**Sunucu**: değişiklik yok, **p0.28** ile çalışır.\r\n\r\n**Bilinen küçük eksikler**\r\n- Videonun içine gömülü (MKV) altyazılar TV'ye aktarılmıyor.\r\n- Ücretsiz & klasik rafından açılan filmde oynatıcı başlığı dosya adını gösteriyor.\r\n- \"Yeni bölüm çıktı\" için masaüstü bildirimi yok.\r\n- Mola ve sıradaki bölüm değişikliği gerçek odada henüz denenmedi; Mac gerçek cihazda denenmedi. Sorun görürseniz `cast.log` ile bildirin.\r\n\r\n---\r\n\r\n**English (short)**: KONİ 1.1.4 fixes casting to TV (a crash while fetching subtitles in 1.1.3), removes a square glow on the countdown ring, shows Break durations in the room control bar, and makes auto-next-episode run only for the room host. No server change (p0.28).",
+  "pub_date": "2026-11-06T15:41:24Z",
+  "platforms": {
+    "windows-x86_64": {
+      "url": "https://github.com/Savas07/koni-releases/releases/download/v1.1.4/KONI_1.1.4_x64-setup.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUM3hzUjhhQ3M5RlZyNlBJdE1leE5weTU1d1ZHakhSem5weS9PYVVqNyt0UDZqbGx0TUtnNUZBamg5SjU0aXkyaExucmJpQ0F1N3prRVJraUVuQjlYcFAvWWJjUnpWTWdnPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTc5NjY4CWZpbGU6S09OSV8xLjEuNF94NjQtc2V0dXAuZXhlCXZlcnNpb246MS4xLjQKZFpYRXhEbUNvOFlvWGlyR2wxVWkzMWpWUHNKVE4vK1lKYUsrZURLREVjdm9pRW81ckJsOFI3UVVFVTdOUjFoVFRja0FJZU1FSkRXUTVpeWd2ZnN3Qnc9PQo="
+    },
+    "darwin-aarch64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVUM3hzUjhhQ3M5RmJQbmhIRWI1dkpReUZrYlpQTmdSM3M4cngrb3F2bDV3SmxlUHNJYVF5S3JGZWJuL2VvdDR5UVJLZHpiNEh4bHRVUDByU3c5TW4vSk90Y1dOV1dndmc4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzkzOTgwMDMyCWZpbGU6S09OSS5hcHAudGFyLmd6CXZlcnNpb246MS4xLjQKdHQvODc2STdGT1FMdW93clVpTDFESkVVYTFocGdMblAzS2VzU2Nub1JyOCtGbTYxbTA4UGpNNVI3OWdkcm1qaDNKSFptQ3krQ3B3anpoU2VjbWptQnc9PQo=",
+      "url": "https://github.com/Savas07/koni-releases/releases/download/v1.1.4/KONI_1.1.4_aarch64.app.tar.gz"
+    }
+  }
+}
